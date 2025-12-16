@@ -64,7 +64,7 @@ def health():
 # Redirect root based on environment
 @app.route("/")
 def home():
-    return jsonify({"status": "Maze Game Backend", "version": "1.0"})
+    return app.send_static_file("index.html")
 
 # Keep auth routes but handle both form and JSON
 @app.route("/signup", methods=["GET", "POST", "OPTIONS"])
