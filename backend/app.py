@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, session, jsonify
 from flask_cors import CORS, cross_origin
-from models import db, User
+from backend.models import db, User
 import os
 from dotenv import load_dotenv
 
